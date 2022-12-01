@@ -26,7 +26,7 @@ class InventoryApp extends Component
     public $itemName;
     public $lent;
     public $lenderName = "";
-    
+    public $order = "created_at";    
     
     public function ajoutNom()
     {
@@ -48,10 +48,15 @@ class InventoryApp extends Component
     {
         Item::where('id', $id)->delete();
     }
+
+    public function updatedLenderName()
+    {
+        $this->render();
+    }
     public function render()
     {
         return view('livewire.inventory-app',[
-            'items' => Item::get()
+            'items' => Item::orderby($this->order)->get()
         ]);
     }
 }

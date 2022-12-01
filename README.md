@@ -6,6 +6,5 @@
 C'est une application web (utilisable en mobile) nécessitant une connexion, qui permet à l'administration de l'école de gérer les stocks, de controller les emprunts et configurer différents paramètres (nombre d'emprunt max, durée de prêt etc), et aux élèves de se connecter à leur nom et de parcourir le stock de produits disponible, et de sélectionner celui qu'ils souhaitent emprunter.
 
 ## fonctionnalités
-
-[X] - Afficher la liste des objets
-[ ] - gestion utilisateurs
+[x] Afficher la liste des objets
+[ ] gestion utilisateurs

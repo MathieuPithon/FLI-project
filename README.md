@@ -27,3 +27,16 @@ C'est une application web (utilisable en mobile) nécessitant une connexion, qui
 - [ ] gérer les tags/catégories des objets
 - [ ] voir les dates de dernier emprunt
 - [ ] voir des statistiques sur les objets/étudiants
+
+## Objet
+chaque objet doit avoir les informations suivantes:
+- nom
+- description
+- image (facultatif)
+- (admin) date d'ajout dans l'inventaire
+- (admin) date de dernier emprunt
+- (admin) emprunteur actuel
+- date de retour prévu
+- état (à voir)
+- tags (exemple: un stylo aura comme tag "papeterie" et "stylo")
+- quantité (dans le cas des objets interchangeable)

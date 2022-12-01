@@ -25,4 +25,5 @@ C'est une application web (utilisable en mobile) nécessitant une connexion, qui
 - [ ] pouvoir contacter un élève (via mail)
 - [ ] gérer les règles d'emprunt (nombre d'emprunt max par personne, durée par défaut de l'emprunt/durée max)
 - [ ] gérer les tags/catégories des objets
-
+- [ ] voir les dates de dernier emprunt
+- [ ] voir des statistiques sur les objets/étudiants

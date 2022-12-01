@@ -21,11 +21,10 @@
             }
         </style>
         <!-- CSS only -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-        @livewireStyles
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.2.2/dist/zephyr/bootstrap.min.css" integrity="sha256-yZpjeMecRI+jXfJ/6hgz2vb12592soiMWCxI/5d65wY=" crossorigin="anonymous">        @livewireStyles
     </head>
     <body class="row mt-5">
-        <div class="col-md-4 mx-auto bg-gray-100">
+        <div class="col-md-8 mx-auto bg-gray-100">
             @livewire('inventory-app')
         </div>
         @livewireScripts

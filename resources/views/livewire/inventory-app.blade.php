@@ -48,10 +48,10 @@
         <table class="table">
             <thead class="table-dark">
                 <tr>
-                    <th class="th1">Nom</th>
-                    <th class="th1">Emprunté</th>
-                    <th class="th1">Date d'emprunt</th>
-                    <th class="th1">Nom de l'emprunteur</th>
+                    <th class="th1" wire:click='inventoryOrder("itemName")'>nom</th>
+                    <th class="th1" wire:click='inventoryOrder("lent")'>Emprunté</th>
+                    <th class="th1" wire:click='inventoryOrder("lendDate")'>Date d'emprunt</th>
+                    <th class="th1" wire:click='inventoryOrder("lenderName")'>Nom de l'emprunteur</th>
                     <th class="th2">emprunter</th>
                     <th class="th2">supprimer</th>
                 </tr>

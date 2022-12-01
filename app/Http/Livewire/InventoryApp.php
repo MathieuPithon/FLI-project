@@ -24,10 +24,12 @@ class InventoryApp extends Component
         // 'lowest.numeric' => 'Champ > 0'
     ];
     public $itemName;
-    public $lent;
     public $lenderName = "";
-    public $order = "created_at";    
-    
+    public $order = [
+        'columnName' => 'created_at',
+        "sens" => 'asc'
+    ];
+
     public function ajoutNom()
     {
         $this->validate();
@@ -36,11 +38,9 @@ class InventoryApp extends Component
     }
     public function lending($id, $lent)
     {
-        if ($lent == 0)
-        {
-            Item::where('id', $id)->update(['lent' => 1, 'lendDate' => Carbon::now()->toDateTimeString(), 'lenderName' => $this->lenderName ]);
-        }else
-        {
+        if ($lent == 0) {
+            Item::where('id', $id)->update(['lent' => 1, 'lendDate' => Carbon::now()->toDateTimeString(), 'lenderName' => $this->lenderName]);
+        } else {
             Item::where('id', $id)->update(['lent' => 0, 'lendDate' => null, 'lenderName' => null]);
         }
     }
@@ -49,14 +49,29 @@ class InventoryApp extends Component
         Item::where('id', $id)->delete();
     }
 
-    public function updatedLenderName()
+    public function inventoryOrder($columnName)
     {
-        $this->render();
+        if ($this->order["columnName"] == $columnName) {
+            // $this->order["sens"] = 'asc' ? 'desc' : 'asc' ;
+            if ($this->order['sens'] == 'asc') 
+            {
+                $this->order['sens'] = 'desc';
+            }else
+            {
+                $this->order['sens'] = 'asc';
+            }
+        } else {
+            $this->order = [
+                "columnName" => $columnName,
+                "sens" => 'asc'
+            ];
+        }
     }
+
     public function render()
     {
-        return view('livewire.inventory-app',[
-            'items' => Item::orderby($this->order)->get()
+        return view('livewire.inventory-app', [
+            'items' => Item::orderby($this->order["columnName"], $this->order["sens"])->get()
         ]);
     }
 }

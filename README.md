@@ -7,4 +7,22 @@ C'est une application web (utilisable en mobile) nécessitant une connexion, qui
 
 ## fonctionnalités
 - [x] Afficher la liste des objets
+- [x] pouvoir emprunter un objet
 - [ ] gestion utilisateurs
+
+### fonctionnalités étudiants
+- [ ] trier la liste des objets par disponibilité
+- [ ] voir les dates de retour prévu 
+- [ ] pouvoir filtrer par catégorie d'objet / faire une recherche
+- [ ] voir la liste des objets empruntés 
+- [ ] voir l'historique d'emprunt
+- [ ] pouvoir contacter l'administration (via mail) 
+
+### fonctionnalités administration
+- [ ] gérer les comptes élèves/administration
+- [x] ajouter de nouveaux objets
+- [ ] voir ce que chaque élève a emprunté / son historique
+- [ ] pouvoir contacter un élève (via mail)
+- [ ] gérer les règles d'emprunt (nombre d'emprunt max par personne, durée par défaut de l'emprunt/durée max)
+- [ ] gérer les tags/catégories des objets
+

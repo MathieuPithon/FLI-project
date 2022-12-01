@@ -52,14 +52,7 @@ class InventoryApp extends Component
     public function inventoryOrder($columnName)
     {
         if ($this->order["columnName"] == $columnName) {
-            // $this->order["sens"] = 'asc' ? 'desc' : 'asc' ;
-            if ($this->order['sens'] == 'asc') 
-            {
-                $this->order['sens'] = 'desc';
-            }else
-            {
-                $this->order['sens'] = 'asc';
-            }
+            $this->order["sens"] = ($this->order['sens'] == 'asc') ? 'desc' : 'asc';
         } else {
             $this->order = [
                 "columnName" => $columnName,

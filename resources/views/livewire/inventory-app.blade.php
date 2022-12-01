@@ -74,10 +74,12 @@
                             <button class="btn btn-primary" data-toggle="modal" data-target="#nameModal">Connectez vous pour
                             emprunter</button>
                         @else
+                                <div></div>
                             @if ($item->lent == 0)
                                 <button class="btn btn-success"
                                 wire:click="lending({{$item->id}}, {{$item->lent}})">emprunter</button>
                             @else
+                            
                                 <button class="btn btn-warning"
                                 wire:click="lending({{$item->id}}, {{$item->lent}})">rendre</button>
 
@@ -100,7 +102,7 @@
                                 </button>
                             </div>
                             <div class="modal-body">
-                                êtes vous sur de vouloir retirer cet objet de l'inventaire?
+                                êtes vous sur de vouloir retirer l'objet "{{$item->itemName}}" de l'inventaire?
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>

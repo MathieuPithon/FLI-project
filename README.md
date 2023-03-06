@@ -5,6 +5,28 @@
  
 C'est une application web (utilisable en mobile) nécessitant une connexion, qui permet à l'administration de l'école de gérer les stocks, de controller les emprunts et configurer différents paramètres (nombre d'emprunt max, durée de prêt etc), et aux élèves de se connecter à leur nom et de parcourir le stock de produits disponible, et de sélectionner celui qu'ils souhaitent emprunter.
 
+## fonctionnement:
+- un utilisateur se connecte, choisit un produit dans la liste des produits disponible, le réserve à son nom et passe le chercher
+- pour la récupération, c'est un admin qui valide le retour en stock
+
+
+### core features:
+- voir les stocks / les emprunts et trier par catégorie
+- compte admin pour gérer les stocks et les retours 
+- compte utilisateur pour réserver/emprunter un produit et voir les produits dispo
+
+### suppléments:
+- possibilité d'avoir une date de rendue personnalisable + prolongeable en cas de besoin
+- possibilité de contacter un administrateur via un chat
+- alerte admin si manque de stock
+- des stats sur les emprunts
+- pouvoir noter l'état du produit et signaler une malfonction
+- voir l'historique d'emprunt d'un utilisateur/ d'un produit
+
+### à voir?
+- possibilité d'emprunt sans compte (ajouter sécurité genre dépot piece identité ou autre)
+
+
 ## fonctionnalités
 - [x] Afficher la liste des objets
 - [x] pouvoir emprunter un objet
